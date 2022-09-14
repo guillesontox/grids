@@ -84,7 +84,7 @@ nav ul li{list-style-type: none;}
     font-family: fantasy;
     grid-area: redes;
 }
-
+/*------------------------------------grids------------------------------------*/
 .gridBody{
     display: grid;
     width: 100%;
@@ -118,6 +118,17 @@ footer{
     grid-template-columns: 35% auto;
         
 }
+/*------------------------------------animacion------------------------------------*/
+@keyframes aparecer{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.animation{
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+/*------------------------------------media------------------------------------*/
 @media (min-width: 300px) and (max-width: 768px){
     body{
         display: block;
